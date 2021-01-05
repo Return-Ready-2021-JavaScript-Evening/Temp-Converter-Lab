@@ -1,0 +1,16 @@
+1.  HTML: Header (h1) with text 'Temperature Scale Convertor' 
+    CSS: Justify-Center, Font Bold
+2.  HTML: Label with text 'Value' 
+    CSS: Block-Level, Justify-Center
+3.  HTML: Label with text 'Fahrenheit' 
+    CSS: Justify-Left
+4.  HTML: Input with property/ value type="number" 
+    CSS: border: solid black 1px, Justify-Center
+5.  HTML: Button with text 'Calculate' 
+    CSS: background-color: lightblue border: solid blue 1px, Justify-Right 
+    JS: Calculate and display celcius value
+6.  HTML: Break for an empty row
+7.  HTML: Label with text 'Celcius' 
+    CSS: Justify-Center, Font Bold, Block Level
+8.  HTML: Input 
+    CSS: Justify Center

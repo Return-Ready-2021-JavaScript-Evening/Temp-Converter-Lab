@@ -1,0 +1,33 @@
+.container {
+    border: solid black 1px;
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    padding: 15px;
+    margin: auto;
+}
+
+.aligner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+.flexRow {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
+
+.bold {
+    font-weight: bold;
+  }
+
+button {
+    border: solid blue 1px;
+    background-color: lightblue;
+}
+
+#fInput {
+    width: 100px;
+}
