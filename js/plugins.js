@@ -4,10 +4,10 @@
 // Event listener for Calculate button to convert to Celcius and place into #labelOutput
 $("#btnCalc").on('click', () => {
 
-    // Is conversion f or c
     const $temp = $('#labelTemp').text();
     let outputNumber = 0;
 
+    // Is conversion F or C
     if ($temp.toLowerCase() == 'celcius') {
         const $faran = $('#fInput').val();
         outputNumber = ($faran - 32) * (5 / 9);
@@ -24,7 +24,7 @@ $("#btnCalc").on('click', () => {
 
 });
 
-//format output as 2-4 decimal places
+// Format output as 2-4 decimal places
 function formatNumber(num) {
     const formatter = new Intl.NumberFormat('en-US', {
         minimumFractionDigits: 2,
@@ -34,6 +34,7 @@ function formatNumber(num) {
     return formatter.format(num);
 }
 
+// Event listener for Celcius Radio click to change input/ output labels between F/C
 $("#CelciusRadio").on('click', () => {
     const $labelTemp = $('#labelTemp');
     $labelTemp.text('Celcius');
@@ -43,6 +44,7 @@ $("#CelciusRadio").on('click', () => {
     clearLabelOutput();
 });
 
+// Event listener for Faranheight Radio click to change input/ output labels between F/C
 $("#FaranheightRadio").on('click', () => {
     const $labelTemp = $('#labelTemp');
     $labelTemp.text('Faranheight');
