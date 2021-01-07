@@ -36,23 +36,22 @@ function formatNumber(num) {
 
 // Event listener for Celcius Radio click to change input/ output labels between F/C
 $("#CelciusRadio").on('click', () => {
-    const $labelTemp = $('#labelTemp');
-    $labelTemp.text('Celcius');
-    const $labelInput = $('#labelInput');
-    $labelInput.text('Fahrenheit:');
-
+    setLabels('Fahrenheit:', 'Celcius');
     clearLabels();
 });
 
 // Event listener for Faranheight Radio click to change input/ output labels between F/C
 $("#FahrenheitRadio").on('click', () => {
-    const $labelTemp = $('#labelTemp');
-    $labelTemp.text('Fahrenheit');
-    const $labelInput = $('#labelInput');
-    $labelInput.text('Celcius:');
-
+    setLabels('Celcius:', 'Fahrenheit');
     clearLabels();
 });
+
+function setLabels(inputText, tempText){
+    const $labelTemp = $('#labelTemp');
+    $labelTemp.text(tempText);
+    const $labelInput = $('#labelInput');
+    $labelInput.text(inputText);
+}
 
 // Clear input/ output when user toggles between temp type
 function clearLabels() {
