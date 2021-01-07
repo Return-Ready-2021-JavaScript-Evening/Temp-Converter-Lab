@@ -43,6 +43,6 @@ button {
     width: 100px;
 }
 
-/* #labelOutput {
-  display: block;
-} */
+#labelInput {
+  width: 76.42px;
+}

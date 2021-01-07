@@ -39,24 +39,26 @@ $("#CelciusRadio").on('click', () => {
     const $labelTemp = $('#labelTemp');
     $labelTemp.text('Celcius');
     const $labelInput = $('#labelInput');
-    $labelInput.text('Faranheight');
+    $labelInput.text('Fahrenheit:');
 
-    clearLabelOutput();
+    clearLabels();
 });
 
 // Event listener for Faranheight Radio click to change input/ output labels between F/C
-$("#FaranheightRadio").on('click', () => {
+$("#FahrenheitRadio").on('click', () => {
     const $labelTemp = $('#labelTemp');
-    $labelTemp.text('Faranheight');
+    $labelTemp.text('Fahrenheit');
     const $labelInput = $('#labelInput');
-    $labelInput.text('Celcius');
+    $labelInput.text('Celcius:');
 
-    clearLabelOutput();
+    clearLabels();
 });
 
-// Clear output when user toggles between temp type
-function clearLabelOutput() {
+// Clear input/ output when user toggles between temp type
+function clearLabels() {
     const $labelOutput = $('#labelOutput');
     $labelOutput.html('&nbsp');
+    const $fInput = $('#fInput');
+    $fInput.val('');
 }
 
