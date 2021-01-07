@@ -7,6 +7,17 @@
     margin: auto;
 }
 
+.radioDiv {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+}
+
+.radioDiv label {
+  padding: 0 10px;
+}
+
 .aligner {
     display: flex;
     align-items: center;
