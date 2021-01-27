@@ -1,0 +1,42 @@
+/*
+h1 Bold and centered
+label "value" is centered
+label "Fahrenheit" is aligned :left
+Input type="number" is centered
+create a Solid black border around number
+create blue border around button 
+create background light blue 
+center celsius label
+create black border around entire converter*/
+
+
+.container {
+    border: solid black 1px;
+    display: flex;
+    flex-direction:column;
+    width:fit-content;
+    padding:15px;
+    margin:auto;
+}
+
+   .row {
+    display:flex;
+    flex-wrap: nowrap;
+    justify-content:  space-between; }
+
+    button {
+     font-weight: bold;
+     width:100px;
+     height:50px;
+     background-color: lightblue;
+     
+
+    }
+
+    .center{
+        text-align: center;
+        
+
+
+    }
+;
